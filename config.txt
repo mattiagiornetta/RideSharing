@@ -1,0 +1,6 @@
+dbservername = 
+dbport =
+dbuser = 	
+dbpassword = 
+dbname= 
+graphhopper_key = 
