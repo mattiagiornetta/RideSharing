@@ -55,19 +55,20 @@
                             class="resize-none w-full p-4 border-2 border-gray-200 rounded-2xl focus:ring-4 focus:ring-blue-500/20 focus:border-blue-500 transition-all duration-300 text-lg"
                             placeholder="Da quale città parti?" 
                             autocomplete="off" 
-                            onkeyup="getSuggestions('comunePartenza','comunePartenzaId')"></textarea>
+                            onkeyup="getSuggestions('comunePartenza','comunePartenzaId', 'suggestions')"></textarea>
                     </div>
-                    
+                      
+                    <ul id="suggestions" class="mt-2 bg-white border-2 border-gray-200 rounded-2xl shadow-lg hidden max-h-48 overflow-y-auto"></ul>
                     <div class="relative">
                         <label class="block text-sm font-medium text-gray-700 mb-2">🎯 Destinazione</label>
                         <textarea type="text" rows="1" id="comuneArrivo" 
                             class="resize-none w-full p-4 border-2 border-gray-200 rounded-2xl focus:ring-4 focus:ring-blue-500/20 focus:border-blue-500 transition-all duration-300 text-lg"
                             placeholder="Dove vuoi arrivare?" 
                             autocomplete="off" 
-                            onkeyup="getSuggestions('comuneArrivo','comuneArrivoId')"></textarea>
+                            onkeyup="getSuggestions('comuneArrivo','comuneArrivoId','suggestions2')"></textarea>
                     </div>
                     
-                    <ul id="suggestions" class="mt-2 bg-white border-2 border-gray-200 rounded-2xl shadow-lg hidden max-h-48 overflow-y-auto"></ul>
+                    <ul id="suggestions2" class="mt-2 bg-white border-2 border-gray-200 rounded-2xl shadow-lg hidden max-h-48 overflow-y-auto"></ul>
                     
                     <input type="hidden" id="comunePartenzaId" name="comunePartenzaId">
                     <input type="hidden" id="comuneArrivoId" name="comuneArrivoId">
